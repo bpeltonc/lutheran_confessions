@@ -1,5 +1,9 @@
+import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+
+SplashScreen.preventAutoHideAsync();
+setTimeout(SplashScreen.hideAsync, 5000);
 
 export default function App() {
   return (
